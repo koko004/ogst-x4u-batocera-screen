@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Installation du script OGST Batocera en cours"
+echo "Instalación del script OGST de Batocera en curso"
 # full write enable
 mount -o remount,rw /
 mount -o remount,rw /boot
@@ -34,6 +34,6 @@ python -c "import py_compile; py_compile.compile('/usr/lib/python2.7/site-packag
 batocera-save-overlay
 # delete install script
 rm -f install-ogst-batocera.sh
-echo "Installation ok (si pas d'erreur(s) ci dessus).. Redemarrage en cours...."
+echo "Instalación correcta (si no hay errores arriba). Reinicio en curso...."
 sleep 3
 reboot
