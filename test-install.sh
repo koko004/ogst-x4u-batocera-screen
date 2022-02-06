@@ -10,11 +10,18 @@ wget -q -nv -O /userdata/system/ogstbatocera.z02 https://github.com/koko004/ogst
 wget -q -nv -O /userdata/system/ogstbatocera.z03 https://github.com/koko004/ogst-x4u-batocera-screen/raw/main/ogstbatocera.z03
 wget -q -nv -O /userdata/system/ogstbatocera.z04 https://github.com/koko004/ogst-x4u-batocera-screen/raw/main/ogstbatocera.z04
 # unzip package
-unzip -o -q /userdata/system/ogstbatocera.zip -d /userdata/system
+
+zip -s 0 /userdata/system/ogstbatocera.zip --out /userdata/system/unsplit-ogst.zip
+unzip -o -q /userdata/system/unsplit-ogst.zip -d /userdata/system
+
 # move OGST folder to the /userdata/ path
 mv  /userdata/system/OGST  /userdata/OGST
 # delete package
 rm -f /userdata/system/ogstbatocera.zip
+rm -f /userdata/system/ogstbatocera.z01
+rm -f /userdata/system/ogstbatocera.z02
+rm -f /userdata/system/ogstbatocera.z04
+rm -f /userdata/system/unsplit-ogst.zip
 # make ffmpeg executable
 chmod +x /usr/bin/ffmpeg
 # make custom script executable
