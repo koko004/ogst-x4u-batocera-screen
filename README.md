@@ -10,4 +10,8 @@ https://mega.nz/file/pdkSjJTA#-jxmF_FtkX1l_SDGP22ZiUeWzPPL08YE5r6Ir_0jxTs
 
 2# Connect ssh to Batocera with user "root" and password "linux" and run:
 
+curl -sL https://raw.githubusercontent.com/koko004/ogst-x4u-batocera-screen/main/new-install.sh | bash
+
+or
+
 curl -sL https://raw.githubusercontent.com/koko004/ogst-x4u-batocera-screen/main/install.sh | bash
